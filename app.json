@@ -1,0 +1,30 @@
+{
+  "id": "3561b506-bbc3-4a24-acee-8a08e02299c0",
+  "name": "Biclaw-server",
+  "publisher": "DealPatrol",
+  "version": "1.0.0.0",
+  "brief": "Biclaw server extension for Business Central",
+  "description": "Biclaw server extension for Dynamics 365 Business Central",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "22.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50099
+    }
+  ],
+  "features": [],
+  "runtime": "12.0",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  }
+}
