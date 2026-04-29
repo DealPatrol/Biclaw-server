@@ -4,7 +4,7 @@ import { query } from '@/lib/db'
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const user = await getCurrentUser()
@@ -13,7 +13,7 @@ export async function GET(
       return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
     }
 
-    const reportId = params.id
+    const { id: reportId } = await params
 
     // Get user's organization
     const orgResult = await query(
